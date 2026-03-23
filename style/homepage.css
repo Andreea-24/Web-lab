@@ -102,9 +102,9 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../image/Many-flowers-white-tulips-pink-rose_iphone_750x1334.jpg) no-repeat ;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../image/360_F_801654662_PnjUyiG7oVtiLekm1bSpqW8kOnvpUQQm.jpg) no-repeat center ;
     background-size: cover;
-    background-position: center ;
     color:#ffffff
 }
 
@@ -114,19 +114,19 @@ header .fa-bars{
 
 .home .content h3{
     font-size: 6rem ;
-    color:#053311;
+    color:#810665;
 }
 
 .home .content span{
     font-size: 3.5rem ;
-    color:#082020;
+    color:#630a64;
     padding: 1rem 0;
     line-height: 1.5;
 }
 
 .home .content p{
     font-size: 1.5rem ;
-    color: #feffff;
+    color: #720787;
     padding: 1rem 0;
     line-height: 1.5;
 }

@@ -38,14 +38,43 @@
     transform: scale(1.1);
 }
 
+.products .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
 
+.products .box-container .box .content h3{
+    font-size: 2.5rem;
+    color:#333;
+}
 
+.products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color:var(--pink);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
 
+.products .box-container .box .content .price span{
+    font-size: 2.5rem; 
+    color:#030000;
+    font-weight: lighter;
+   
+}
 
+.products .box-container .box .content .discount{
+    font-size: 1.5rem;
+    color:var(--pink);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
 
-
-
-
+.heading {
+    text-align: center;    
+    font-size: 4rem;        
+    padding: 2rem;
+    margin: 2rem 0;
+}
 
 
 :root{

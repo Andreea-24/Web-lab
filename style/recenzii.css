@@ -1,3 +1,75 @@
+/* Box-urile de recenzii */
+.recenzii .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0.5rem 1.5rem 2rem rgba(0, 0, 0, .1); /* adăugat blur */
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    position: relative;
+    background: #fff;
+    border-top: 4px solid var(--pink); /* accent colorat sus */
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.recenzii .box-container .box:hover {
+    transform: translateY(-8px); /* ridicare la hover */
+    box-shadow: 0.5rem 2rem 3rem rgba(0, 0, 0, .15);
+}
+
+/* Stelele */
+.recenzii .box-container .box .stars {
+    margin-bottom: 1.5rem;
+}
+
+.recenzii .box-container .box .stars i {
+    color: var(--pink);
+    font-size: 1.8rem;
+}
+
+/* Textul recenziei - era .p, greșit! */
+.recenzii .box-container .box p {
+    color: #666;
+    font-size: 1.5rem;
+    line-height: 2.4rem; /* era 1.5rem, prea strâns */
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee; /* linie separatoare */
+}
+
+/* Userul */
+.recenzii .box-container .box .user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+
+.recenzii .box-container .box .user .avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: var(--pink);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.recenzii .box-container .box .user h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.recenzii .box-container .box .user span {
+    font-size: 1.2rem;
+    color: var(--pink);
+}
+
+
+
 :root{
   --pink:#e84393;
 }
