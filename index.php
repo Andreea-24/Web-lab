@@ -16,8 +16,8 @@
            <nav class="navbar ">
              
                  <a href="#home" >Home</a>   
-                 <a href="./src/about.html" >about</a>
-                 <a href="./src/products.html" >products</a> 
+                 <a href="/about" >about</a>
+                 <a href="/products" >products</a> 
                  <a href="#recenzii" >recenzii</a> 
                  <a href="#contact" >contact</a>   
         </nav>
@@ -37,7 +37,7 @@
         <span>Stil, culoare,inspiratie-totul intr-un buchet</span>
         <p>Într-o lume în care gesturile simple au cea mai mare valoare, noi îți oferim flori 
             care transformă momentele obișnuite în clipe extraordinare și pline de emoție.</p>
-       <a href="./src/products.html" class="btn">Cumpara acum</a>   
+       <a href="/products" class="btn">Cumpara acum</a>   
 
        </div> 
     </section>

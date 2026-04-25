@@ -14,11 +14,11 @@
          <a href="#" class="logo">flower<span>.</span></a>
            <nav class="navbar ">
                
-                 <a href="../index.html" >Home</a>   
-                 <a href="./about.html" >about</a>
-                 <a href="./products.html" >products</a> 
+                 <a href="/" >Home</a>   
+                 <a href="/about" >about</a>
+                 <a href="/products" >products</a> 
                  <a href="#" >recenzii</a> 
-                 <a href="./contact.html" >contact</a>   
+                 <a href="/contact" >contact</a>   
         </nav>
         <div class="icons">
           <a href="#"  class="fas fa-heart" ></a>

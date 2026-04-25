@@ -6,7 +6,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - ./src:/var/www/html
+      - ./:/var/www/html
     depends_on:
       - db
     restart: unless-stopped
@@ -25,6 +25,7 @@ services:
       - "3306:3306"
     volumes:
       - ./db_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
 
   # phpMyAdmin (interfață web pentru baza de date)
   phpmyadmin:

@@ -1,0 +1,11 @@
+RewriteEngine On
+
+DirectoryIndex index.php
+
+# URL-uri curate: /pagina  ->  src/pagina.php
+RewriteRule ^about/?$        src/about.php       [L]
+RewriteRule ^products/?$     src/products.php    [L]
+RewriteRule ^contact/?$      src/contact.php     [L]
+RewriteRule ^recenzii/?$     src/recenzii.php    [L]
+RewriteRule ^admin/?$        src/admin.php       [L]
+RewriteRule ^save-order/?$   src/save_order.php  [L]

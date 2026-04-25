@@ -1,0 +1,16 @@
+# Date MySQL (binar, conține socket files care strică git add)
+db_data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs / backup
+*.log
+*.bak
+*.tmp

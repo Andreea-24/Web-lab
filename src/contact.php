@@ -13,12 +13,12 @@
             <label for="toggler" class="fas fa-bars"></label>
          <a href="#" class="logo">flower<span>.</span></a>
            <nav class="navbar ">
-               
-                 <a href="../index.html" >Home</a>   
-                 <a href="./about.html" >about</a>
-                 <a href="./products.html" >products</a> 
-                 <a href="./recenzii.html" >recenzii</a> 
-                 <a href="#" >contact</a>   
+
+                 <a href="/" >Home</a>
+                 <a href="/about" >about</a>
+                 <a href="/products" >products</a>
+                 <a href="/recenzii" >recenzii</a>
+                 <a href="#" >contact</a>
         </nav>
 
         <div class="icons">
@@ -27,30 +27,30 @@
           <a href="#"  class="fas fa-user" ></a>
         </div>
 
-    
+
         </header>
         <section class="contact" id="contact">
             <h1 class="heading"><span>Contacteaza</span>ne</h1>
             <div class="row">
 
-        <form id="orderForm">
+        <form id="orderForm" action="/save-order" method="POST">
             <div class="produs-info">
-    Buchet selectat: <strong id="numeProdus">—</strong>
-    </div>
+                Buchet selectat: <strong id="numeProdus">—</strong>
+            </div>
 
-    <input type="hidden" id="produs" name="produsSelectat">
+            <input type="hidden" id="produs" name="produs">
 
-    <input type="text" placeholder="nume, prenume" class="box">
-    <input type="email" placeholder="email" class="box">
-    <input type="tel" placeholder="telefon" class="box">
-    <textarea class="box" placeholder="message" cols="30" rows="10"></textarea>
-    <input type="submit" value="trimite mesajul" class="btn">
-</form>
-<div class="image">
-    <img src="../image/003e5cfa781a5559ce8513abf5cdd1e3.jpg">
-</div>
+            <input type="text"  name="nume"    placeholder="nume, prenume" class="box">
+            <input type="email" name="email"   placeholder="email"         class="box">
+            <input type="tel"   name="telefon" placeholder="telefon"       class="box">
+            <textarea           name="message" placeholder="message" cols="30" rows="10" class="box"></textarea>
+            <input type="submit" value="trimite mesajul" class="btn">
+        </form>
+        <div class="image">
+            <img src="../image/003e5cfa781a5559ce8513abf5cdd1e3.jpg">
+        </div>
 
-</div>
+        </div>
         </section>
 <script src="../script.js"></script>
     </body>

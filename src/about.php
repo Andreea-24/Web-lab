@@ -14,11 +14,11 @@
          <a href="#" class="logo">flower<span>.</span></a>
            <nav class="navbar ">
                
-                 <a href="../index.html" >Home</a>   
+                 <a href="/" >Home</a>   
                  <a href="#" >about</a>
-                 <a href="./products.html" >products</a> 
-                 <a href="./recenzii.html" >recenzii</a> 
-                 <a href="./contact.html" >contact</a>   
+                 <a href="/products" >products</a> 
+                 <a href="/recenzii" >recenzii</a> 
+                 <a href="/contact" >contact</a>   
         </nav>
 
         <div class="icons">
@@ -44,7 +44,7 @@
                 Fiecare buchet este creat cu grijă și pasiune, pentru a-ți oferi o experiență florală unică și memorabilă.</p>
                 <p>Indiferent de ocazie, avem buchete pentru toate gusturile și preferințele, de la cele clasice la cele moderne, 
                     pentru a-ți satisface toate dorințele florale. Alege-ne pentru a aduce un strop de culoare și emoție în viața ta!</p>
-                    <a href="./products.html" class="btn">Cumpara acum</a>
+                    <a href="/products" class="btn">Cumpara acum</a>
 
     </div>
 </section>

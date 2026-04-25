@@ -1,3 +1,8 @@
+<?php
+require __DIR__ . '/db.php';
+$products = $conn->query('SELECT id, slug, name, price, discount, image
+                          FROM products ORDER BY id ASC')->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,12 +18,12 @@
             <label for="toggler" class="fas fa-bars"></label>
          <a href="#" class="logo">flower<span>.</span></a>
            <nav class="navbar ">
-               
-                 <a href="../index.html" >Home</a>   
-                 <a href="./about.html" >about</a>
-                 <a href="#" >products</a> 
-                 <a href="./recenzii.html" >recenzii</a> 
-                 <a href="./contact.html" >contact</a>   
+
+                 <a href="/" >Home</a>
+                 <a href="/about" >about</a>
+                 <a href="#" >products</a>
+                 <a href="/recenzii" >recenzii</a>
+                 <a href="/contact" >contact</a>
         </nav>
 
         <div class="icons">
@@ -30,127 +35,21 @@
     </header>
     <main>
     <section class="products" id="products">
-        <h1 class="heading">Produse<span>in stoc</span></h1>
+        <h1 class="heading">Produse <span>in stoc</span></h1>
         <div class="box-container">
+            <?php foreach ($products as $p): ?>
             <div class="box">
-                
                 <div class="image">
-                    <img src="../image/OIP (1).webp" alt="">
-                   
-                   
-                    </div>
-                    <div class="content">
-                        <h3>Buchet lalele albe</h3>
-                        <span class="discount">-10%</span>
-                        <div class="price">  <span>120 lei</span></div>
-                         <button class="btn buyBtn" data-product="buchet-lalele-albe">Cumpara acum</button>
-                     </div>
+                    <img src="../image/<?= htmlspecialchars($p['image']) ?>" alt="<?= htmlspecialchars($p['name']) ?>">
                 </div>
-                <div class="box">
-                <div class="image">
-                    <img src="../image/roziniu-tulpiu-puokste.jpg" alt="">
-                   
-                    </div>
-                    <div class="content">
-                        <h3>Buchet roziniu-tulpiu</h3>
-                        <span class="discount">-15%</span>
-                        <div class="price"> <span>130 lei</span></div>
-                         <button class="btn buyBtn" data-product="buchet-roziniu-tulpiu">Cumpara acum</button>
-                     </div>
+                <div class="content">
+                    <h3><?= htmlspecialchars($p['name']) ?></h3>
+                    <span class="discount">-<?= (int)$p['discount'] ?>%</span>
+                    <div class="price"><span><?= number_format((float)$p['price'], 0) ?> lei</span></div>
+                    <button class="btn buyBtn" data-product="<?= htmlspecialchars($p['slug']) ?>">Cumpara acum</button>
                 </div>
-                
-                 <div class="box">
-                
-                <div class="image">
-                    <img src="../image/img1333_main_l.jpg" alt="">
-                   
-                    </div>
-                    <div class="content">
-                        <h3>Buchet trandafiri</h3>
-                        <span class="discount">-10%</span>
-                        <div class="price">  <span>300 lei</span></div>
-                         <button class="btn buyBtn" data-product="buchet-trandafiri">Cumpara acum</button>
-                     </div>
-                </div>
-                <div class="box">
-                <div class="image">
-                    <img src="../image/suflet-de-floare-buchet-trandafiri-si-minirosa-incantator--5d09104e26ee6.jpg" alt="">
-                   
-                    </div>
-                    <div class="content">
-                        <h3>Buchet trandafiri portocalii </h3>
-                        <span class="discount">-15%</span>
-                        <div class="price">  <span>300 lei</span></div>
-                         <button class="btn buyBtn" data-product="buchet-trandafiri portocalii">Cumpara acum</button>
-                     </div>
-                </div>
-                
-                <div class="box">
-                <div class="image">
-                    <img src="../image/amz-buchet-superb-roz.jpg" alt="">
-                   
-                    </div>
-                    <div class="content">
-                        <h3>Buchet trandafiri roz </h3>
-                        <span class="discount">-8%</span>
-                        <div class="price"> <span>800 lei</span></div>
-                         <button class="btn buyBtn" data-product="buchet-trandafiri roz">Cumpara acum</button>
-                     </div>
-                </div>
-                
-                <div class="box">
-                <div class="image">
-                    <img src="../image/OIP (2).webp" alt="">
-                   
-                    </div>
-                    <div class="content">
-                        <h3>Buchet trandafiri  </h3>
-                        <span class="discount">-15%</span>
-                        <div class="price"> <span>700 lei</span></div>
-                         <button class="btn buyBtn" data-product="buchet-trandafiri">Cumpara acum</button>
-                     </div>
-                </div>
-                
-                <div class="box">
-                <div class="image">
-                    <img src="../image/tulipani_viola_gypsophila.jpg" alt="">
-                   
-                    </div>
-                    <div class="content">
-                        <h3>Buchet lalele violete </h3>
-                        <span class="discount">-8%</span>
-                        <div class="price">  <span>600 lei</span></div>
-                        <button class="btn buyBtn" data-product="buchet-lalele-violete">Cumpara acum</button>
-                     </div>
-                </div>
-
-                <div class="box">
-                <div class="image">
-                    <img src="../image/3880.jpg" alt="">
-                   
-                    </div>
-                    <div class="content">
-                        <h3>Buchet trandafiri rosii albi </h3>
-                        <span class="discount">-8%</span>
-                        <div class="price"><span>850 lei</span></div>
-                         <button class="btn buyBtn" data-product="buchet-trandafiri rosii albi">Cumpara acum</button>
-                     </div>
-                </div>
-                <div class="box">
-                <div class="image">
-                    <img src="../image/1656784395_43182417-600x600.jpeg" alt="">
-                   
-                    </div>
-                    <div class="content">
-                        <h3>Buchet garoafe </h3>
-                        <span class="discount">-8%</span>
-                        <div class="price"> <span>750 lei</span></div>
-                         <button class="btn buyBtn" data-product="buchet-garoafe">Cumpara acum</button>
-                     </div>
-                </div>
-
-
             </div>
+            <?php endforeach; ?>
         </div>
     </section>
     </main>
