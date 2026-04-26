@@ -1,5 +1,5 @@
 <?php
-$host = 'db';              // <-- numele serviciului, NU localhost!
+$host = 'db';              
 $user = 'user';
 $pass = 'userpass';
 $dbname = 'site_db';
